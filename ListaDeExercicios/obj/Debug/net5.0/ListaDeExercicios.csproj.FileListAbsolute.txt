@@ -1,0 +1,16 @@
+C:\Users\Aluno\Documents\DSV_DesenvolvimentoSoftwareVisual2022\ListaDeExercicios\obj\Debug\net5.0\ListaDeExercicios.csproj.AssemblyReference.cache
+C:\Users\Aluno\Documents\DSV_DesenvolvimentoSoftwareVisual2022\ListaDeExercicios\obj\Debug\net5.0\ListaDeExercicios.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aluno\Documents\DSV_DesenvolvimentoSoftwareVisual2022\ListaDeExercicios\obj\Debug\net5.0\ListaDeExercicios.AssemblyInfoInputs.cache
+C:\Users\Aluno\Documents\DSV_DesenvolvimentoSoftwareVisual2022\ListaDeExercicios\obj\Debug\net5.0\ListaDeExercicios.AssemblyInfo.cs
+C:\Users\Aluno\Documents\DSV_DesenvolvimentoSoftwareVisual2022\ListaDeExercicios\obj\Debug\net5.0\ListaDeExercicios.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\Documents\DSV_DesenvolvimentoSoftwareVisual2022\ListaDeExercicios\bin\Debug\net5.0\ListaDeExercicios.exe
+C:\Users\Aluno\Documents\DSV_DesenvolvimentoSoftwareVisual2022\ListaDeExercicios\bin\Debug\net5.0\ListaDeExercicios.deps.json
+C:\Users\Aluno\Documents\DSV_DesenvolvimentoSoftwareVisual2022\ListaDeExercicios\bin\Debug\net5.0\ListaDeExercicios.runtimeconfig.json
+C:\Users\Aluno\Documents\DSV_DesenvolvimentoSoftwareVisual2022\ListaDeExercicios\bin\Debug\net5.0\ListaDeExercicios.runtimeconfig.dev.json
+C:\Users\Aluno\Documents\DSV_DesenvolvimentoSoftwareVisual2022\ListaDeExercicios\bin\Debug\net5.0\ListaDeExercicios.dll
+C:\Users\Aluno\Documents\DSV_DesenvolvimentoSoftwareVisual2022\ListaDeExercicios\bin\Debug\net5.0\ref\ListaDeExercicios.dll
+C:\Users\Aluno\Documents\DSV_DesenvolvimentoSoftwareVisual2022\ListaDeExercicios\bin\Debug\net5.0\ListaDeExercicios.pdb
+C:\Users\Aluno\Documents\DSV_DesenvolvimentoSoftwareVisual2022\ListaDeExercicios\obj\Debug\net5.0\ListaDeExercicios.dll
+C:\Users\Aluno\Documents\DSV_DesenvolvimentoSoftwareVisual2022\ListaDeExercicios\obj\Debug\net5.0\ref\ListaDeExercicios.dll
+C:\Users\Aluno\Documents\DSV_DesenvolvimentoSoftwareVisual2022\ListaDeExercicios\obj\Debug\net5.0\ListaDeExercicios.pdb
+C:\Users\Aluno\Documents\DSV_DesenvolvimentoSoftwareVisual2022\ListaDeExercicios\obj\Debug\net5.0\ListaDeExercicios.genruntimeconfig.cache

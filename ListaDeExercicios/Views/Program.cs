@@ -7,7 +7,6 @@ namespace ListaDeExercicios.Views
         static void Main(string[] args)
         {
             int ex;
-           
             Console.Write("Digite um exercicio entre 1 a 6: ");
             ex = Convert.ToInt32(Console.ReadLine());
 
@@ -32,6 +31,7 @@ namespace ListaDeExercicios.Views
                     Ex06.Renderizar();
                     break;
                 default:
+                    Console.Write("Opção inválida\n");
                     break;
             }
         }

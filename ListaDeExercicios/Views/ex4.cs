@@ -11,7 +11,7 @@ namespace ListaDeExercicios.Views
             idade = Convert.ToInt32(Console.ReadLine());
             if (idade <= 13)
             {
-                Console.WriteLine("Crinça!");
+                Console.WriteLine("Criança!");
             }
             if (idade > 13 && idade <= 18)
             {
