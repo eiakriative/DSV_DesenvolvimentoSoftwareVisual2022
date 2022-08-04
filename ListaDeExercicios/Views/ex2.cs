@@ -19,7 +19,7 @@ namespace ListaDeExercicios.Views
             peso_arg = real / VALOR_PESOARG_ATUAL;
             Console.WriteLine($"Dolar: { dolar.ToString("C", CultureInfo.CreateSpecificCulture("en-US")) } ");
             Console.WriteLine($"Euro: { euro.ToString("C", CultureInfo.CreateSpecificCulture("en-GB")) } ");
-            Console.WriteLine($"Peso Argentina: { peso_arg.ToString("C", CultureInfo.CreateSpecificCulture("es-AR")) } ");
+            Console.WriteLine($"Peso Argentino: { peso_arg.ToString("C", CultureInfo.CreateSpecificCulture("es-AR")) } ");
         }
     }
 }
