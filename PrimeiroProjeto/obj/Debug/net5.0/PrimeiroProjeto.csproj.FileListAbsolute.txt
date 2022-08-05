@@ -1,0 +1,16 @@
+C:\Users\Aluno\Documents\DSV_DesenvolvimentoSoftwareVisual2022\PrimeiroProjeto\bin\Debug\net5.0\PrimeiroProjeto.exe
+C:\Users\Aluno\Documents\DSV_DesenvolvimentoSoftwareVisual2022\PrimeiroProjeto\bin\Debug\net5.0\PrimeiroProjeto.deps.json
+C:\Users\Aluno\Documents\DSV_DesenvolvimentoSoftwareVisual2022\PrimeiroProjeto\bin\Debug\net5.0\PrimeiroProjeto.runtimeconfig.json
+C:\Users\Aluno\Documents\DSV_DesenvolvimentoSoftwareVisual2022\PrimeiroProjeto\bin\Debug\net5.0\PrimeiroProjeto.runtimeconfig.dev.json
+C:\Users\Aluno\Documents\DSV_DesenvolvimentoSoftwareVisual2022\PrimeiroProjeto\bin\Debug\net5.0\PrimeiroProjeto.dll
+C:\Users\Aluno\Documents\DSV_DesenvolvimentoSoftwareVisual2022\PrimeiroProjeto\bin\Debug\net5.0\ref\PrimeiroProjeto.dll
+C:\Users\Aluno\Documents\DSV_DesenvolvimentoSoftwareVisual2022\PrimeiroProjeto\bin\Debug\net5.0\PrimeiroProjeto.pdb
+C:\Users\Aluno\Documents\DSV_DesenvolvimentoSoftwareVisual2022\PrimeiroProjeto\obj\Debug\net5.0\PrimeiroProjeto.csproj.AssemblyReference.cache
+C:\Users\Aluno\Documents\DSV_DesenvolvimentoSoftwareVisual2022\PrimeiroProjeto\obj\Debug\net5.0\PrimeiroProjeto.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aluno\Documents\DSV_DesenvolvimentoSoftwareVisual2022\PrimeiroProjeto\obj\Debug\net5.0\PrimeiroProjeto.AssemblyInfoInputs.cache
+C:\Users\Aluno\Documents\DSV_DesenvolvimentoSoftwareVisual2022\PrimeiroProjeto\obj\Debug\net5.0\PrimeiroProjeto.AssemblyInfo.cs
+C:\Users\Aluno\Documents\DSV_DesenvolvimentoSoftwareVisual2022\PrimeiroProjeto\obj\Debug\net5.0\PrimeiroProjeto.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\Documents\DSV_DesenvolvimentoSoftwareVisual2022\PrimeiroProjeto\obj\Debug\net5.0\PrimeiroProjeto.dll
+C:\Users\Aluno\Documents\DSV_DesenvolvimentoSoftwareVisual2022\PrimeiroProjeto\obj\Debug\net5.0\ref\PrimeiroProjeto.dll
+C:\Users\Aluno\Documents\DSV_DesenvolvimentoSoftwareVisual2022\PrimeiroProjeto\obj\Debug\net5.0\PrimeiroProjeto.pdb
+C:\Users\Aluno\Documents\DSV_DesenvolvimentoSoftwareVisual2022\PrimeiroProjeto\obj\Debug\net5.0\PrimeiroProjeto.genruntimeconfig.cache
