@@ -5,9 +5,9 @@ namespace ListaDeExercicios.Views
 {
     public class Ex02
     {
-        const double VALOR_DOLAR_ATUAL = 5.25;
-        const double VALOR_EURO_ATUAL = 5.34;
-        const double VALOR_PESOARG_ATUAL = 0.039;
+        const double VALOR_DOLAR_ATUAL = 5.16;
+        const double VALOR_EURO_ATUAL = 5.32;
+        const double VALOR_PESOARG_ATUAL = 0.038;
 
         public static void Renderizar()
         {

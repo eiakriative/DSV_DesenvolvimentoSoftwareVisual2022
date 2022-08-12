@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Aluno\\Documents\\DSV_DesenvolvimentoSoftwareVisual2022\\ListaDeExercicios\\ListaDeExercicios.csproj": {}
+    "C:\\Users\\Aluno\\Documents\\DSV_DesenvolvimentoSoftwareVisual2022\\Aula 1\\ListaDeExercicios\\ListaDeExercicios.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Aluno\\Documents\\DSV_DesenvolvimentoSoftwareVisual2022\\ListaDeExercicios\\ListaDeExercicios.csproj": {
+    "C:\\Users\\Aluno\\Documents\\DSV_DesenvolvimentoSoftwareVisual2022\\Aula 1\\ListaDeExercicios\\ListaDeExercicios.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aluno\\Documents\\DSV_DesenvolvimentoSoftwareVisual2022\\ListaDeExercicios\\ListaDeExercicios.csproj",
+        "projectUniqueName": "C:\\Users\\Aluno\\Documents\\DSV_DesenvolvimentoSoftwareVisual2022\\Aula 1\\ListaDeExercicios\\ListaDeExercicios.csproj",
         "projectName": "ListaDeExercicios",
-        "projectPath": "C:\\Users\\Aluno\\Documents\\DSV_DesenvolvimentoSoftwareVisual2022\\ListaDeExercicios\\ListaDeExercicios.csproj",
+        "projectPath": "C:\\Users\\Aluno\\Documents\\DSV_DesenvolvimentoSoftwareVisual2022\\Aula 1\\ListaDeExercicios\\ListaDeExercicios.csproj",
         "packagesPath": "C:\\Users\\Aluno\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aluno\\Documents\\DSV_DesenvolvimentoSoftwareVisual2022\\ListaDeExercicios\\obj\\",
+        "outputPath": "C:\\Users\\Aluno\\Documents\\DSV_DesenvolvimentoSoftwareVisual2022\\Aula 1\\ListaDeExercicios\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
