@@ -2,16 +2,16 @@ namespace OrientacaoObjetos
 {
     class Usuario
     {
-        private string Nome; 
+        public string Nome {get; set;}
 
-        public string getNome()
-        {
-            return Nome;
-        }
+        // public string getNome()
+        // {
+        //     return Nome;
+        // }
 
-        public void setNome(string Nome){
-            this.Nome = Nome;
-        }
+        // public void setNome(string Nome){
+        //     this.Nome = Nome;
+        // }
 
        
     }

@@ -7,8 +7,8 @@ namespace OrientacaoObjetos
         static void Main(string[] args)
         {
             Usuario usr = new Usuario();
-            usr.setNome("Joel");
-            Console.WriteLine($"Nome do usuario { usr.getNome() }");
+            usr.Nome = "Joel";
+            Console.WriteLine($"Nome do usuario { usr.Nome }");
             Console.WriteLine("----------------------------------");
             Produto prod = new Produto();
             prod.Nome = "Tenis Nike";
