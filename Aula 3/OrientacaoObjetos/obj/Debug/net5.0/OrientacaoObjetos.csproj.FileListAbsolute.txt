@@ -1,0 +1,16 @@
+C:\Users\Aluno\Documents\DSV_DesenvolvimentoSoftwareVisual2022\Aula 3\OrientacaoObjetos\bin\Debug\net5.0\OrientacaoObjetos.exe
+C:\Users\Aluno\Documents\DSV_DesenvolvimentoSoftwareVisual2022\Aula 3\OrientacaoObjetos\bin\Debug\net5.0\OrientacaoObjetos.deps.json
+C:\Users\Aluno\Documents\DSV_DesenvolvimentoSoftwareVisual2022\Aula 3\OrientacaoObjetos\bin\Debug\net5.0\OrientacaoObjetos.runtimeconfig.json
+C:\Users\Aluno\Documents\DSV_DesenvolvimentoSoftwareVisual2022\Aula 3\OrientacaoObjetos\bin\Debug\net5.0\OrientacaoObjetos.runtimeconfig.dev.json
+C:\Users\Aluno\Documents\DSV_DesenvolvimentoSoftwareVisual2022\Aula 3\OrientacaoObjetos\bin\Debug\net5.0\OrientacaoObjetos.dll
+C:\Users\Aluno\Documents\DSV_DesenvolvimentoSoftwareVisual2022\Aula 3\OrientacaoObjetos\bin\Debug\net5.0\ref\OrientacaoObjetos.dll
+C:\Users\Aluno\Documents\DSV_DesenvolvimentoSoftwareVisual2022\Aula 3\OrientacaoObjetos\bin\Debug\net5.0\OrientacaoObjetos.pdb
+C:\Users\Aluno\Documents\DSV_DesenvolvimentoSoftwareVisual2022\Aula 3\OrientacaoObjetos\obj\Debug\net5.0\OrientacaoObjetos.csproj.AssemblyReference.cache
+C:\Users\Aluno\Documents\DSV_DesenvolvimentoSoftwareVisual2022\Aula 3\OrientacaoObjetos\obj\Debug\net5.0\OrientacaoObjetos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aluno\Documents\DSV_DesenvolvimentoSoftwareVisual2022\Aula 3\OrientacaoObjetos\obj\Debug\net5.0\OrientacaoObjetos.AssemblyInfoInputs.cache
+C:\Users\Aluno\Documents\DSV_DesenvolvimentoSoftwareVisual2022\Aula 3\OrientacaoObjetos\obj\Debug\net5.0\OrientacaoObjetos.AssemblyInfo.cs
+C:\Users\Aluno\Documents\DSV_DesenvolvimentoSoftwareVisual2022\Aula 3\OrientacaoObjetos\obj\Debug\net5.0\OrientacaoObjetos.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\Documents\DSV_DesenvolvimentoSoftwareVisual2022\Aula 3\OrientacaoObjetos\obj\Debug\net5.0\OrientacaoObjetos.dll
+C:\Users\Aluno\Documents\DSV_DesenvolvimentoSoftwareVisual2022\Aula 3\OrientacaoObjetos\obj\Debug\net5.0\ref\OrientacaoObjetos.dll
+C:\Users\Aluno\Documents\DSV_DesenvolvimentoSoftwareVisual2022\Aula 3\OrientacaoObjetos\obj\Debug\net5.0\OrientacaoObjetos.pdb
+C:\Users\Aluno\Documents\DSV_DesenvolvimentoSoftwareVisual2022\Aula 3\OrientacaoObjetos\obj\Debug\net5.0\OrientacaoObjetos.genruntimeconfig.cache
