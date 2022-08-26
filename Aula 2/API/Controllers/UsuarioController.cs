@@ -1,36 +1,46 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using API.Models;
+using System.Collections.Generic;
 
 namespace API.Controllers
 {
-    [ApiController]
     [Route("api/usuario")]
-    public class UsuarioController : ControllerBase 
+    [ApiController]
+    public class UsuarioController : ControllerBase
     {
-    //  GET: /api/usuario/listar
+        private static List<Usuario> usuarios  = new List<Usuario>();
+
+        //GET: /api/usuario/listar
         [HttpGet]
         [Route("listar")]
         public IActionResult Listar()
         {
-            
-            Usuario usr = new Usuario
-            {
-                Email = "joventinopantanal@gmail.com",
-                Senha = "jumamarruatapera"
-                
-            };
-            return NotFound(usr);
+            return Ok(usuarios);
         }
 
-         //Exercício 1: cadastrar um usuário recebendo as informações 
-        //da URL
-        //Exercício 2: cadastrar um usuário recebendo as informações 
-        //da corpo da requisição
-        
-   
+        // POST: /api/usuario/cadastrar
+        [HttpPost]
+        [Route("cadastrar")]
+        public IActionResult Cadastrar(
+            [FromBody] Usuario usuario)
+        {
+            usuarios.Add(usuario);
+            return Created("", usuario);
+        }
+
+        //GET: /api/usuario/buscar/{login}
+        [HttpGet]
+        [Route("buscar/{login}")]
+        public IActionResult Buscar([FromRoute] string login)
+        {
+            for (int i = 0; i < usuarios.Count; i++)
+            {
+                if(usuarios[i].Login.Equals(login))
+                {
+                    return Ok(usuarios[i]);
+                }
+            }
+            return NotFound();
+        }
     }
 }

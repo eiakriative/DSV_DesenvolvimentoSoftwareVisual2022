@@ -1,13 +1,15 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
-namespace API.Models
+namespace API.Models 
 {
     public class Usuario
     {
-        public string Email { get; set; }
+        public Usuario()
+        {
+            CriadoEm = DateTime.Now;
+        }
+        public string Login { get; set; }
         public string Senha { get; set; }
+        public DateTime CriadoEm { get; set; }        
     }
 }
