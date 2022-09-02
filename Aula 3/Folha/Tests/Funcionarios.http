@@ -6,8 +6,8 @@ POST https://localhost:5001/api/funcionario/cadastrar
 Content-Type: application/json
 
 {
-    "nome" : "Jonas Cabral",
-    "cpf" : "123"
+    "nome" : "Hugo Cabral",
+    "cpf" : "12347"
 }
 
 ### 
@@ -22,5 +22,5 @@ Content-Type: application/json
 
 {
     "nome" : "Pedro Alvares Cabral",
-    "cpf" : "123456789"
+    "cpf" : "123"
 }

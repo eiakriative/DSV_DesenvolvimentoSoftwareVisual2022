@@ -55,11 +55,11 @@ namespace Folha.Controllers
         [Route("alterar")]
         public IActionResult Alterar([FromBody] Funcionario funcionario)
         {
-            Funcionario funcionarioEncontrado = funcionarios.FirstOrDefault(f => f.Cpf.Equals(funcionario.Cpf));
-            if (funcionarioEncontrado != null)
+            Funcionario funcionarioBuscado = funcionarios.FirstOrDefault(f => f.Cpf.Equals(funcionario.Cpf));
+            if (funcionarioBuscado != null)
             {
-                funcionarioEncontrado.Nome = funcionario.Nome;
-                return Ok(funcionarioEncontrado);
+                funcionarioBuscado.Nome = funcionario.Nome;
+                return Ok(funcionarioBuscado);
             }
             return NotFound();
         }
