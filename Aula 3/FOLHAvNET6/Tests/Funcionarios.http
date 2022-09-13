@@ -1,0 +1,60 @@
+######################################### WINDOWS
+
+###
+GET https://localhost:5001/api/funcionario/listar
+
+
+
+###
+POST https://localhost:5001/api/funcionario/cadastrar
+Content-Type: application/json
+
+{
+    "nome" : "Hugo Cabral",
+    "cpf" : "12347"
+}
+
+###
+GET https://localhost:5001/api/funcionario/buscar/12347
+
+### 
+DELETE https://localhost:5001/api/funcionario/deletar/12347
+
+###
+PATCH  https://localhost:5001/api/funcionario/alterar
+Content-Type: application/json
+
+{
+    "nome" : "Pedro Alvares Cabral",
+    "cpf" : "123497"
+}
+
+
+######################################### LINUX
+
+### 
+GET https://localhost:7163/api/funcionario/listar
+
+###
+POST https://localhost:7163/api/funcionario/cadastrar
+Content-Type: application/json
+
+{
+    "nome" : "Mario Cabral",
+    "cpf" : "123497"
+}
+
+### Linux
+GET https://localhost:7163/api/funcionario/buscar/12347
+
+### Linux
+DELETE https://localhost:7163/api/funcionario/deletar/12347
+
+### Linux
+PATCH  https://localhost:7163/api/funcionario/alterar
+Content-Type: application/json
+
+{
+    "nome" : "Pedro Alvares Cabral",
+    "cpf" : "123497"
+}
