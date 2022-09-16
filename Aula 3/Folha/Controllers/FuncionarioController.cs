@@ -23,7 +23,9 @@ namespace Folha.Controllers
         [Route("cadastrar")]
         public IActionResult Cadastrar([FromBody] Funcionario funcionario)
         {
-            funcionarios.Add (funcionario);
+            DataContext context = new DataContext(null);
+           
+            context.Funcionarios.Add(funcionario);
             return Created("", funcionario);
         }
 

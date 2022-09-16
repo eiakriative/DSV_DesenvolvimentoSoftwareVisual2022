@@ -8,5 +8,7 @@ namespace Folha.Models
         public DataContext(DbContextOptions<DataContext> options) : base(options) { }
 
         public DbSet<Funcionario> Funcionarios { get; set; }
+        
+         public DbSet<FolhaPagamento> Folhas { get; set; }
     }
 }
