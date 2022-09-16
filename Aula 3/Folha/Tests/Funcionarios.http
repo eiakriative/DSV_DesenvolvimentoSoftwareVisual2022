@@ -6,15 +6,15 @@ POST https://localhost:5001/api/funcionario/cadastrar
 Content-Type: application/json
 
 {
-    "nome" : "Hugo Cabral",
-    "cpf" : "12347"
+    "nome" : "Tomas Cabral",
+    "cpf" : "1234778989"
 }
 
 ### 
-GET https://localhost:5001/api/funcionario/buscar/123
+GET https://localhost:5001/api/funcionario/buscar/1234778989
 
 ### 
-DELETE https://localhost:5001/api/funcionario/deletar/123456789
+DELETE https://localhost:5001/api/funcionario/deletar/1234778989
 
 ### 
 PATCH  https://localhost:5001/api/funcionario/alterar

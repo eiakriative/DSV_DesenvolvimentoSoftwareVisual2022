@@ -11,21 +11,23 @@ namespace Folha.Controllers
     [Route("api/funcionario")]
     public class FuncionarioController : ControllerBase
     {
+        private DataContext _context;
+        public FuncionarioController(DataContext context) => _context = context;
+        
         private static List<Funcionario> funcionarios = new List<Funcionario>();
 
         // GET: /api/funcionario/listar
         [HttpGet]
         [Route("listar")]
-        public IActionResult Listar() => Ok(funcionarios);
+        public IActionResult Listar() => Ok(_context.Funcionarios.ToList());
 
         // POST: /api/funcionario/cadastrar
         [HttpPost]
         [Route("cadastrar")]
         public IActionResult Cadastrar([FromBody] Funcionario funcionario)
         {
-            DataContext context = new DataContext(null);
-           
-            context.Funcionarios.Add(funcionario);
+            _context.Funcionarios.Add(funcionario);
+            _context.SaveChanges();
             return Created("", funcionario);
         }
 
@@ -34,7 +36,7 @@ namespace Folha.Controllers
         [Route("buscar/{cpf}")]
         public IActionResult Buscar([FromRoute] string cpf)
         {
-            Funcionario funcionario = funcionarios.FirstOrDefault(f => f.Cpf.Equals(cpf));
+            Funcionario funcionario = _context.Funcionarios.FirstOrDefault(f => f.Cpf.Equals(cpf));
             return funcionario != null ? Ok(funcionario) : NotFound();
         }
 
