@@ -1,20 +1,17 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
 using Folha.Models;
+using Microsoft.AspNetCore.Mvc;
 
-namespace Folha.Controllers
+namespace API.Controllers
 {
     [ApiController]
     [Route("api/funcionario")]
     public class FuncionarioController : ControllerBase
     {
-        private DataContext _context;
-        public FuncionarioController(DataContext context) => _context = context;
-        
-        private static List<Funcionario> funcionarios = new List<Funcionario>();
+        private readonly DataContext _context;
+        public FuncionarioController(DataContext context) =>
+            _context = context;
 
         // GET: /api/funcionario/listar
         [HttpGet]
@@ -36,19 +33,21 @@ namespace Folha.Controllers
         [Route("buscar/{cpf}")]
         public IActionResult Buscar([FromRoute] string cpf)
         {
-            Funcionario funcionario = _context.Funcionarios.FirstOrDefault(f => f.Cpf.Equals(cpf));
+            Funcionario funcionario = _context.Funcionarios.
+                FirstOrDefault(f => f.Cpf.Equals(cpf));
             return funcionario != null ? Ok(funcionario) : NotFound();
         }
 
-        // DELETE: /api/funcionario/deletar/{cpf}
+        // DELETE: /api/funcionario/deletar/{id}
         [HttpDelete]
-        [Route("deletar/{cpf}")]
-        public IActionResult Deletar([FromRoute] string cpf)
+        [Route("deletar/{id}")]
+        public IActionResult Deletar([FromRoute] int id)
         {
-            Funcionario funcionario = funcionarios.FirstOrDefault(f => f.Cpf.Equals(cpf));
+            Funcionario funcionario = _context.Funcionarios.Find(id);
             if (funcionario != null)
             {
-                funcionarios.Remove(funcionario);
+                _context.Funcionarios.Remove(funcionario);
+                _context.SaveChanges();
                 return Ok(funcionario);
             }
             return NotFound();
@@ -59,13 +58,16 @@ namespace Folha.Controllers
         [Route("alterar")]
         public IActionResult Alterar([FromBody] Funcionario funcionario)
         {
-            Funcionario funcionarioBuscado = funcionarios.FirstOrDefault(f => f.Cpf.Equals(funcionario.Cpf));
-            if (funcionarioBuscado != null)
+            try
             {
-                funcionarioBuscado.Nome = funcionario.Nome;
-                return Ok(funcionarioBuscado);
+                _context.Funcionarios.Update(funcionario);
+                _context.SaveChanges();
+                return Ok(funcionario);
             }
-            return NotFound();
+            catch
+            {
+                return NotFound();
+            }
         }
     }
 }
