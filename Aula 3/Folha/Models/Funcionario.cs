@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
-// using Folha.Validations;
+using Folha.Validations;
 
 namespace Folha.Models
 {
@@ -23,6 +23,7 @@ namespace Folha.Models
             MinimumLength = 11,
             ErrorMessage = "O campo CPF deve conter 11 caracteres!"
         )]
+        // [CpfEmUso]
         public string Cpf { get; set; }
 
         [Range(
@@ -40,5 +41,6 @@ namespace Folha.Models
         public DateTime Nascimento { get; set; }
 
         public DateTime CriadoEm { get; set; }
+        
     }
 }

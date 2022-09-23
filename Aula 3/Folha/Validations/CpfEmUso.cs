@@ -2,12 +2,13 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using Folha.Models;
 
-namespace API_Folha.Validations
+namespace Folha.Validations
 {
     public class CpfEmUso : ValidationAttribute
     {
         // public CpfEmUso(string cpf) { }
-        protected override ValidationResult IsValid(object value, ValidationContext validationContext)
+        protected override ValidationResult IsValid(object value, 
+        ValidationContext validationContext)
         {
             string cpf = (string)value;
 
