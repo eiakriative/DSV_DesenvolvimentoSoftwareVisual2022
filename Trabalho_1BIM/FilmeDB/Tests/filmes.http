@@ -1,0 +1,72 @@
+### FILME
+
+### Listar
+
+GET https://localhost:5001/api/filmes/listar
+
+### Cadastrar
+
+POST https://localhost:5001/api/filmes/cadastrar
+Content-Type: application/json
+
+{
+    "Nome" : "Life in a Year",
+    "Ano" : "2020",
+    "GeneroId" : 1
+}
+###
+
+POST https://localhost:5001/api/filmes/cadastrar
+Content-Type: application/json
+
+{
+    "Nome" : "Clube da Luta",
+    "Ano" : "1999",
+    "GeneroId" : 1
+}
+
+###
+POST https://localhost:5001/api/filmes/cadastrar
+Content-Type: application/json
+
+{
+    "Nome" : "Umma",
+    "Ano" : "2022",
+    "GeneroId" : 2
+}
+###
+
+POST https://localhost:5001/api/filmes/cadastrar
+Content-Type: application/json
+
+{
+    "Nome" : "Minions 2: A Origem de Gru",
+    "Ano" : "2022",
+    "GeneroId" : 2
+}
+
+### Buscar
+
+### Buscar por nome
+
+GET https://localhost:5001/api/filmes/buscarpornome/AB
+
+### Buscar por ano
+
+GET https://localhost:5001/api/filmes/buscarporano/2021
+
+### Editar
+
+PUT  https://localhost:5001/api/filmes/editar
+Content-Type: application/json
+
+{
+    "Id" : 1,
+    "Nome" : "AA",
+    "Ano" : "2001",
+    "GeneroId" : 1
+}
+
+### Deletar
+
+DELETE https://localhost:5001/api/filmes/deletar/2

@@ -1,0 +1,48 @@
+### Atores
+
+### Listar
+
+GET https://localhost:5001/api/atores/listar
+
+### Cadastrar
+
+POST https://localhost:5001/api/atores/cadastrar
+Content-Type: application/json
+
+{
+    "Nome" : "Daniel Craig",
+    "Nascimento" : "1968-03-02",
+    "FilmeId" : 2,
+    "GeneroId" : 1
+}
+### 
+
+POST https://localhost:5001/api/atores/cadastrar
+Content-Type: application/json
+
+{
+    "Nome" : "Brad Pitt",
+    "Nascimento" : "1963-12-18",
+    "FilmeId" : 6,
+    "GeneroId" : 1
+}
+
+
+
+### Alterar
+
+PUT https://localhost:5001/api/atores/editar
+Content-Type: application/json
+
+{
+    "Id" : 1,
+    "Nome" : "jo jou",
+    "Nascimento" : "1969-06-03",
+    "FilmeId" : 2,
+    "GeneroId" : 1
+}
+
+### Deletar
+
+DELETE https://localhost:5001/api/atores/deletar/2
+
