@@ -3,14 +3,16 @@ using System;
 using API_Folhas.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace API_FOlhas.Migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class DataContextModelSnapshot : ModelSnapshot
+    [Migration("20221014001816_Initial")]
+    partial class Initial
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -22,13 +24,7 @@ namespace API_FOlhas.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Ano")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<DateTime>("CriadoEm")
-                        .HasColumnType("TEXT");
-
-                    b.Property<int>("FuncionarioId")
+                    b.Property<int?>("FuncionarioId")
                         .HasColumnType("INTEGER");
 
                     b.Property<double>("ImpostoFgts")
@@ -39,9 +35,6 @@ namespace API_FOlhas.Migrations
 
                     b.Property<double>("ImpostoRenda")
                         .HasColumnType("REAL");
-
-                    b.Property<int>("Mes")
-                        .HasColumnType("INTEGER");
 
                     b.Property<int>("QuantidadeHoras")
                         .HasColumnType("INTEGER");
@@ -96,13 +89,14 @@ namespace API_FOlhas.Migrations
 
             modelBuilder.Entity("API_Folhas.Models.FolhaPagamento", b =>
                 {
-                    b.HasOne("API_Folhas.Models.Funcionario", "Funcionario")
-                        .WithMany()
-                        .HasForeignKey("FuncionarioId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    b.HasOne("API_Folhas.Models.Funcionario", null)
+                        .WithMany("Folhas")
+                        .HasForeignKey("FuncionarioId");
+                });
 
-                    b.Navigation("Funcionario");
+            modelBuilder.Entity("API_Folhas.Models.Funcionario", b =>
+                {
+                    b.Navigation("Folhas");
                 });
 #pragma warning restore 612, 618
         }
