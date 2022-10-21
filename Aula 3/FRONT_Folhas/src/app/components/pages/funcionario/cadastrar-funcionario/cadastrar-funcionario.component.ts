@@ -11,5 +11,8 @@ export class CadastrarFuncionarioComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  calcular(){
+   alert("Olá mundo!");
+   console.log("Olá mundo!")
+  }
 }
