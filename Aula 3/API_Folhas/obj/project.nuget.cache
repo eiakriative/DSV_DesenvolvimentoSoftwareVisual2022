@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "qAbUvbwKqGUestfa5nxZguarI9OP9YFwApmUGy/6tttsz1fspG/x5ihwf7AlJG/O2KY9ucsa/XNP55qG+4IoSQ==",
+  "dgSpecHash": "zmOvQTrktKY9bW7gT22dBQZZvZzjxNE0xJR3W0OYQm+0GXdDVUiCzk4Hy/Y4+CSFKCTL1Y0+NQ7d0h4X1lbMqg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Aluno\\Documents\\DSV_DesenvolvimentoSoftwareVisual2022\\Aula 3\\API_Folhas\\API_FOlhas.csproj",
   "expectedPackageFiles": [
@@ -12,6 +12,7 @@
     "C:\\Users\\Aluno\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.17\\microsoft.entityframeworkcore.abstractions.5.0.17.nupkg.sha512",
     "C:\\Users\\Aluno\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\5.0.17\\microsoft.entityframeworkcore.analyzers.5.0.17.nupkg.sha512",
     "C:\\Users\\Aluno\\.nuget\\packages\\microsoft.entityframeworkcore.design\\5.0.17\\microsoft.entityframeworkcore.design.5.0.17.nupkg.sha512",
+    "C:\\Users\\Aluno\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\5.0.17\\microsoft.entityframeworkcore.inmemory.5.0.17.nupkg.sha512",
     "C:\\Users\\Aluno\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\5.0.17\\microsoft.entityframeworkcore.relational.5.0.17.nupkg.sha512",
     "C:\\Users\\Aluno\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite\\5.0.17\\microsoft.entityframeworkcore.sqlite.5.0.17.nupkg.sha512",
     "C:\\Users\\Aluno\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite.core\\5.0.17\\microsoft.entityframeworkcore.sqlite.core.5.0.17.nupkg.sha512",
