@@ -1,3 +1,4 @@
+using System.Collections.Immutable;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,6 +29,19 @@ namespace API_Folhas
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(
+                options => {
+                    options.AddPolicy
+                    (
+                        "CorsPolicy", builder =>
+                        builder.
+                        AllowAnyOrigin().
+                        AllowAnyHeader().
+                        AllowAnyMethod()
+                    );
+                }
+            );
+
             services.AddDbContext<DataContext>
             (
                 options => options.UseSqlite("DataSource=folhas.db;Cache=shared")
@@ -48,6 +62,9 @@ namespace API_Folhas
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "API_FOlhas v1"));
             }
+
+
+            app.UseCors("CorsPolicy");
 
             app.UseHttpsRedirection();
 

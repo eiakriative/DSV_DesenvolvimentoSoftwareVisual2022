@@ -1,4 +1,6 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { Funcionario } from 'src/app/models/Funcionario';
 
 @Component({
   selector: 'app-listar-funcionarios',
@@ -7,9 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListarFuncionariosComponent implements OnInit {
 
-  constructor() { }
+  funcionarios!: Funcionario[];
+
+  constructor(private http : HttpClient) {} 
 
   ngOnInit(): void {
+    this.http.get<Funcionario[]>
+    ("https://localhost:5001/api/funcionario/listar")
+    // Execução da requisição
+    .subscribe({
+      next: (funcionarios) => {
+        this.funcionarios = funcionarios;
+      }
+    });
   }
 
 }
