@@ -19,7 +19,7 @@ export class ListarFuncionariosComponent implements OnInit {
     // Execução da requisição
     .subscribe({
       next: (funcionarios) => {
-        this.funcionarios = funcionarios;
+        console.table(funcionarios);
       }
     });
   }
