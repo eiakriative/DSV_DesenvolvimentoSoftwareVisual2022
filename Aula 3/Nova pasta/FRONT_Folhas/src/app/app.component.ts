@@ -6,6 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.css']
 })
 export class AppComponent {
-  //title = 'FRONT_Folhas';
-  title: string = 'Teste da string'
+  title: string = 'Teste do String';
 }
