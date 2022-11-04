@@ -1,3 +1,4 @@
+import { Console } from 'console';
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { Funcionario } from 'src/app/models/Funcionario';
@@ -19,9 +20,18 @@ export class ListarFuncionariosComponent implements OnInit {
     // Execução da requisição
     .subscribe({
       next: (funcionarios) => {
-        console.table(funcionarios);
+        for (const funcionario in funcionarios) {
+          console.log(funcionario)
+          
+        }
+        this.funcionarios = funcionarios;
       }
     });
+  }
+
+  remover(id: number): void{
+    alert('id: ${id}');
+    // this.ngOnInit();
   }
 
 }

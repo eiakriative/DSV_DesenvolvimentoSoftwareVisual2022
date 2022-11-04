@@ -5,4 +5,22 @@
 <script  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"  integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"  crossorigin="anonymous"></script>
 <script  src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"  integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"  crossorigin="anonymous"></script>
 
-<h2 style="width:800px; margin:0 auto;"h1>Listar Funcionários</h2>
+<h2 style="width:800px; margin:0 auto;">Cadastrar Funcionário</h2>
+<br>
+<div style="width:800px; margin:0 auto;">
+  <div id="nome">
+    <label for="txtNome">Nome </label>
+    <input type="text" id="txtNome" [(ngModel)]="nome" />
+  </div>
+  <br>
+  <div id="cpf">
+    <label for="txtCpf">CPF </label>
+    <input type="text" id="txtCpf" [(ngModel)]="cpf" />
+  </div>
+  <div id="botao">
+    <button id="btnCadastrar" (click)="cadastrar()">Cadastrar</button>
+  </div>
+  <div>
+    <b><h3 class="erro">{{ mensagem }}</h3></b>
+  </div>
+</div>

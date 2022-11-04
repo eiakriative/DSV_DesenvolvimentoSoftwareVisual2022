@@ -1,0 +1,38 @@
+<link  rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"  integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"  crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<script  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"  crossorigin="anonymous"></script>
+<script  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"  integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"  crossorigin="anonymous"></script>
+<script  src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"  integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"  crossorigin="anonymous"></script>
+
+<h1 style="width:800px; margin:0 auto;"h1>Listar Funcionários</h1>
+
+<table class="customtabela" style="width:800px; margin:0 auto;" >
+    <tr>
+        <th>#</th>
+        <th>Nome</th>
+        <th>CPF</th>
+        <th>Email</th>
+        <th>Salário</th>
+        <th>Nascimento</th>
+        <th>Criado em</th>
+        <th>Opção</th>
+    </tr>
+    <tr *ngFor="let funcionario of funcionarios">
+        <td>{{ funcionario.funcionarioId }}</td>
+        <td>{{ funcionario.nome }}</td>
+        <td>{{ funcionario.cpf }}</td>
+        <td>{{ funcionario.email }}</td>
+        <td>{{ funcionario.salario }}</td>
+        <td>{{ funcionario.nascimento }}</td>
+        <td>{{ funcionario.criadoEm }}</td>
+        <td>
+            <button class="botaocustom" (click)="remover(funcionario.funcionarioId!)">Remover</button>
+        </td>
+    </tr>
+</table>
+<!-- <dl style="width:800px; margin:0 auto;">
+    <dt *ngFor="let funcionario of funcionarios">
+        <div><label>{{ funcionario.nome }}</label></div>
+    </dt>
+</dl> -->
