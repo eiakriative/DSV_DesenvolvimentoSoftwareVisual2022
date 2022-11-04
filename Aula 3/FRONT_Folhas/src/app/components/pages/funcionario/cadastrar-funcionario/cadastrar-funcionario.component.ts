@@ -2,7 +2,7 @@ import { Funcionario } from './../../../../models/Funcionario';
 import { Component, OnInit } from "@angular/core";
 import { HttpClient } from '@angular/common/http';
 import { Console } from 'console';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: "app-cadastrar-funcionario",
@@ -13,10 +13,23 @@ export class CadastrarFuncionarioComponent implements OnInit {
   nome!: string;
   cpf!: string;
   mensagem!: string;
+  id!: string;
 
-  constructor(private http : HttpClient, private router : Router) {} 
+  constructor(
+    private http : HttpClient, 
+    private router : Router, 
+    private route: ActivatedRoute) {} 
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.route.params.subscribe({
+      next: (params) => {
+        let {id} = params;
+        this.id = id;
+        // this.nome = "nome"
+        // console.log(id);
+      } 
+    })
+  }
 
   cadastrar(): void {
 

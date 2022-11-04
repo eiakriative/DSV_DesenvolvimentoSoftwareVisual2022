@@ -6,7 +6,7 @@
 <script  src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"  integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"  crossorigin="anonymous"></script>
 
 <h1 style="width:800px; margin:0 auto;"h1>Listar Funcionários</h1>
-
+<br>
 <table class="customtabela" style="width:1200px; margin:0 auto;" >
     <tr>
         <th> # </th>
@@ -16,7 +16,10 @@
         <th> Salário </th>
         <th> Nascimento </th>
         <th> Criado em </th>
-        <th> Opção </th>
+        <th></th>
+        <th>Remover</th>
+        <th>Alterar</th>
+        <th></th>
     </tr>
     <tr *ngFor="let funcionario of funcionarios">
         <td>{{ funcionario.funcionarioId }}</td>
@@ -26,8 +29,12 @@
         <td>{{ funcionario.salario }}</td>
         <td>{{ funcionario.nascimento }}</td>
         <td>{{ funcionario.criadoEm }}</td>
+        <td></td>
         <td>
-            <button class="botaocustom" (click)="remover(funcionario.funcionarioId!)">Remover</button>
+            <button (click)="remover(funcionario.funcionarioId!)">Remover</button>
+        </td>
+        <td>
+           <a routerLink="/pages/funcionario/cadastrar/{{ funcionario.funcionarioId! }}">Alterar</a>
         </td>
     </tr>
 </table>

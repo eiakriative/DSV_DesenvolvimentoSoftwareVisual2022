@@ -9,13 +9,13 @@
     color:white;
     width:50%; 
     border-left-width: 0;
-    min-width: 120px;
+    min-width: 110px;
 }
 .customtabela td, .myOtherTable th { 
     padding:5px;
     border:0; 
     border-left-width: 0;
-    min-width: 120px;
+    min-width: 110px;
 }
 .customtabela td { 
     border-bottom:1px dotted #BDB76B;
