@@ -30,8 +30,13 @@ export class ListarFuncionariosComponent implements OnInit {
   }
 
   remover(id: number): void{
-    alert('id: ${id}');
-    // this.ngOnInit();
-  }
+    this.http.delete<Funcionario>
+      (`https://localhost:5001/api/funcionario/deletar/${id}`)
+      .subscribe({
+        next: (funcionario) => {
+          this.ngOnInit();
+        }
+      });
+    }
 
 }

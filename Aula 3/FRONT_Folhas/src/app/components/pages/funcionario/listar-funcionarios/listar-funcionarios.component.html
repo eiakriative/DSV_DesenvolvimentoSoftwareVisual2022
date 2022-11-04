@@ -7,16 +7,16 @@
 
 <h1 style="width:800px; margin:0 auto;"h1>Listar Funcionários</h1>
 
-<table class="customtabela" style="width:800px; margin:0 auto;" >
+<table class="customtabela" style="width:1200px; margin:0 auto;" >
     <tr>
-        <th>#</th>
-        <th>Nome</th>
-        <th>CPF</th>
-        <th>Email</th>
-        <th>Salário</th>
-        <th>Nascimento</th>
-        <th>Criado em</th>
-        <th>Opção</th>
+        <th> # </th>
+        <th> Nome </th>
+        <th> CPF </th>
+        <th> Email </th>
+        <th> Salário </th>
+        <th> Nascimento </th>
+        <th> Criado em </th>
+        <th> Opção </th>
     </tr>
     <tr *ngFor="let funcionario of funcionarios">
         <td>{{ funcionario.funcionarioId }}</td>
@@ -31,8 +31,3 @@
         </td>
     </tr>
 </table>
-<!-- <dl style="width:800px; margin:0 auto;">
-    <dt *ngFor="let funcionario of funcionarios">
-        <div><label>{{ funcionario.nome }}</label></div>
-    </dt>
-</dl> -->
