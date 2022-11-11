@@ -13,32 +13,76 @@ export class CadastrarFuncionarioComponent implements OnInit {
   nome!: string;
   cpf!: string;
   mensagem!: string;
-  id!: string;
-
+  email!: string;
+  nascimento!: string;
+  Id!: string;
+  erro!: string;
+  
   constructor(
     private http : HttpClient, 
     private router : Router, 
     private route: ActivatedRoute) {} 
 
-  ngOnInit(): void {
-    this.route.params.subscribe({
-      next: (params) => {
-        let {id} = params;
-        this.id = id;
-        // this.nome = "nome"
-        // console.log(id);
-      } 
-    })
-  }
+    ngOnInit(): void {
+      this.route.params.subscribe((params) => {
+        let { id } = params;
+        if (id !== undefined) {
+          this.http
+            .get<Funcionario>(
+              `https://localhost:5001/api/funcionario/buscar/${id}`
+            )
+            .subscribe({
+              next: (funcionario) => {
+                this.Id = id!;
+                this.nome = funcionario.nome;
+                this.cpf = funcionario.cpf;
+              },
+            });
+        }
+      });
+    }
 
+    alterar(): void {
+      let funcionario: Funcionario = {
+        funcionarioId: Number.parseInt(this.Id),
+        nome: this.nome,
+        cpf: this.cpf,
+        email: "andore@kan.com",
+        salario: 950,
+        //criadoEm: "2022-01-25",
+        nascimento: "1995-01-05",
+      };
+      //Configuração da requisição
+      this.http
+        .patch<Funcionario>(
+          "https://localhost:5001/api/funcionario/alterar",
+          funcionario
+        )
+        //Execução da requisição
+        .subscribe({
+          //Aqui executamos algo quando a requisição for bem-sucedida
+          next: (funcionario) => {
+            this.router.navigate(["pages/funcionario/listar"]);
+          },
+          // //Aqui executamos algo quando a requisição for mal-sucedida
+          // error: (error) => {
+          //   if (error.status == 400) {
+          //     this.erro = "Erro de validação";
+          //   } else if (error.status == 0) {
+          //     this.erro = "Está faltando iniciar a sua API!";
+          //   }
+          // },
+        });
+    }
+ 
   cadastrar(): void {
-
+    
     let funcionario: Funcionario = {
       nome: this.nome,
       cpf: this.cpf,
       email: "andore@kan.com",
       salario: 950,
-      criadoEm: "2022-01-25",
+      //criadoEm: "2022-01-25",
       nascimento: "1995-01-05",
 
     };
@@ -67,3 +111,4 @@ export class CadastrarFuncionarioComponent implements OnInit {
     });
   }
 }
+

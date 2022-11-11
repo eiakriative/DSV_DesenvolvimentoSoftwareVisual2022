@@ -7,12 +7,16 @@ import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { CadastrarFuncionarioComponent } from "./components/pages/funcionario/cadastrar-funcionario/cadastrar-funcionario.component";
 import { ListarFuncionariosComponent } from "./components/pages/funcionario/listar-funcionarios/listar-funcionarios.component";
+import { CadastrarFolhaComponent } from './components/pages/folha/cadastrar-folha/cadastrar-folha.component';
+import { ListarFolhaComponent } from './components/pages/folha/listar-folha/listar-folha.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CadastrarFuncionarioComponent,
     ListarFuncionariosComponent,
+    CadastrarFolhaComponent,
+    ListarFolhaComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],

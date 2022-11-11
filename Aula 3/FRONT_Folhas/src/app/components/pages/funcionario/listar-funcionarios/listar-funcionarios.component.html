@@ -15,7 +15,7 @@
         <th> Email </th>
         <th> Salário </th>
         <th> Nascimento </th>
-        <th> Criado em </th>
+        <!-- <th> Criado em </th> -->
         <th></th>
         <th>Remover</th>
         <th>Alterar</th>
@@ -28,13 +28,15 @@
         <td>{{ funcionario.email }}</td>
         <td>{{ funcionario.salario }}</td>
         <td>{{ funcionario.nascimento }}</td>
-        <td>{{ funcionario.criadoEm }}</td>
+        <!-- <td>{{ funcionario.criadoEm }}</td> -->
         <td></td>
         <td>
             <button (click)="remover(funcionario.funcionarioId!)">Remover</button>
         </td>
         <td>
-           <a routerLink="/pages/funcionario/cadastrar/{{ funcionario.funcionarioId! }}">Alterar</a>
+           <a routerLink="/pages/funcionario/cadastrar/{{ funcionario.funcionarioId! }}">
+            Alterar
+           </a>
         </td>
     </tr>
 </table>
