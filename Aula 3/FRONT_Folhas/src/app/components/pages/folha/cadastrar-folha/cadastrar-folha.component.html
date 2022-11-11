@@ -19,9 +19,9 @@
   <label for="date">Data</label>
   <input type="date" id="date" [(ngModel)]="data" />
 </div>
-<!-- <div id="funcionario">
-  <label for="funcionario">Funcionários</label>
-  <select [(ngModel)]="Id">
+<div id="funcionario">
+  <label for="selfuncionario">Funcionários</label>
+  <select [(ngModel)]="funcionarioId">
     <option
       *ngFor="let funcionario of funcionarios"
       value="{{ funcionario.funcionarioId }}"
@@ -29,7 +29,7 @@
       {{ funcionario.nome }}
     </option>
   </select>
-</div> -->
+</div>
 <div id="botao">
   <button id="btnCadastrar" (click)="cadastrar()">Cadastrar</button>
 </div>
