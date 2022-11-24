@@ -1,7 +1,6 @@
-import { Console } from 'console';
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { Funcionario } from 'src/app/models/Funcionario';
+import { Funcionario } from 'src/app/models/funcionario';
 
 @Component({
   selector: 'app-listar-funcionarios',
@@ -12,31 +11,33 @@ export class ListarFuncionariosComponent implements OnInit {
 
   funcionarios!: Funcionario[];
 
-  constructor(private http : HttpClient) {} 
+  constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
-    this.http.get<Funcionario[]>
-    ("https://localhost:5001/api/funcionario/listar")
-    // Execução da requisição
-    .subscribe({
-      next: (funcionarios) => {
-        for (const funcionario in funcionarios) {
-          console.log(funcionario)
-          
+    //Configurando a requisição para a API
+    this.http.
+      get<Funcionario[]>(
+        "https://localhost:5001/api/funcionario/listar"
+      )
+      // Executar a requisição
+      .subscribe({
+        next: (funcionarios) => {
+          //Executamos o que for necessário quando a requisição
+          //for bem-sucedida
+          this.funcionarios = funcionarios;
         }
-        this.funcionarios = funcionarios;
-      }
-    });
+      });
   }
 
-  remover(id: number): void{
-    this.http.delete<Funcionario>
+  remover(id: number): void {
+    this.http.
+      delete<Funcionario>
       (`https://localhost:5001/api/funcionario/deletar/${id}`)
       .subscribe({
         next: (funcionario) => {
           this.ngOnInit();
-        }
+        },
       });
-    }
+  }
 
 }

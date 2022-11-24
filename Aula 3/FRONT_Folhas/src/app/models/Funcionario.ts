@@ -1,9 +1,9 @@
-export interface Funcionario{
+export interface Funcionario {
     funcionarioId?: number;
     nome: string;
     cpf: string;
-    salario: number;
     email: string;
+    salario: number;
     nascimento: string;
-    //criadoEm: string;
+    criadoEm?: string;
 }

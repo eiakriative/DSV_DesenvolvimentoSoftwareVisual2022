@@ -1,22 +1,22 @@
-import { ListarFolhaComponent } from './components/pages/folha/listar-folha/listar-folha.component';
-import { CadastrarFolhaComponent } from './components/pages/folha/cadastrar-folha/cadastrar-folha.component';
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { CadastrarFuncionarioComponent } from './components/pages/funcionario/cadastrar-funcionario/cadastrar-funcionario.component';
-import { ListarFuncionariosComponent } from './components/pages/funcionario/listar-funcionarios/listar-funcionarios.component';
+import { ListarFolhaComponent } from "./components/pages/folha/listar-folha/listar-folha.component";
+import { NgModule } from "@angular/core";
+import { RouterModule, Routes } from "@angular/router";
+import { CadastrarFolhaComponent } from "./components/pages/folha/cadastrar-folha/cadastrar-folha.component";
+import { CadastrarFuncionarioComponent } from "./components/pages/funcionario/cadastrar-funcionario/cadastrar-funcionario.component";
+import { ListarFuncionariosComponent } from "./components/pages/funcionario/listar-funcionarios/listar-funcionarios.component";
 
 const routes: Routes = [
   {
     path: "pages/funcionario/cadastrar",
-    component: CadastrarFuncionarioComponent
-  },
-  {
-    path: "pages/funcionario/listar",
-    component: ListarFuncionariosComponent
+    component: CadastrarFuncionarioComponent,
   },
   {
     path: "pages/funcionario/cadastrar/:id",
-    component: CadastrarFuncionarioComponent
+    component: CadastrarFuncionarioComponent,
+  },
+  {
+    path: "pages/funcionario/listar",
+    component: ListarFuncionariosComponent,
   },
   {
     path: "pages/folha/cadastrar",
@@ -30,6 +30,6 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

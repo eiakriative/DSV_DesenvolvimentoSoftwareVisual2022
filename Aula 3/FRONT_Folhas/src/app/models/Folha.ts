@@ -1,4 +1,4 @@
-import { Funcionario } from "./Funcionario";
+import { Funcionario } from "./funcionario";
 
 export interface Folha {
   id?: number;
@@ -7,11 +7,11 @@ export interface Folha {
   mes: number;
   ano: number;
   funcionarioId: number;
-  // funcionario?: Funcionario;
-  // impostoInss?: number;
-  // impostoFgts?: number;
-  // impostoRenda?: number;
-  // salarioLiquido?: number;
-  // salarioBruto?: number;
+  funcionario?: Funcionario;
+  impostoInss?: number;
+  impostoFgts?: number;
+  impostoRenda?: number;
+  salarioLiquido?: number;
+  salarioBruto?: number;
   criadoEm?: Date;
 }
